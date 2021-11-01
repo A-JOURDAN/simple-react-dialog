@@ -4,7 +4,7 @@
   "description": "Made with create-react-library",
   "author": "Adrien JOURDAN",
   "license": "MIT",
-  "repository": "",
+  "repository": "A-JOURDAN/simple-react-dialog",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
