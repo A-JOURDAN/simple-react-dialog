@@ -13,16 +13,30 @@ npm install --save simple-react-dialog
 ## Usage
 
 ```jsx
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import SimpleReactDialog from 'simple-react-dialog';
 
-import MyComponent from 'simple-react-dialog';
-import 'simple-react-dialog/dist/index.css';
+const Example = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-class Example extends Component {
-  render() {
-    return <MyComponent />;
-  }
-}
+  return (
+    <SimpleReactDialog onClose={() => setIsOpen(false)} value={isOpen}>
+      <div classname='card'>
+        <h1>Privacy Policy</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <button onClick={() => setIsOpen(false)}>I ACCEPT</button>
+      </div>
+    </SimpleReactDialog>
+  );
+};
 ```
 
 ## License
