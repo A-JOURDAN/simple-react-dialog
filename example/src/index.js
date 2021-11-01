@@ -8,7 +8,7 @@ import './index.scss'
 import styled from 'styled-components';
 
 const Container = styled.main`
-  max-width: 760px;
+  max-width: 750px;
   margin: auto;
 `;
 
