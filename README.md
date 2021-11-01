@@ -13,18 +13,18 @@ npm install --save simple-react-dialog
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import MyComponent from 'simple-react-dialog'
-import 'simple-react-dialog/dist/index.css'
+import MyComponent from 'simple-react-dialog';
+import 'simple-react-dialog/dist/index.css';
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <MyComponent />;
   }
 }
 ```
 
 ## License
 
- © [](https://github.com/)
+MIT © [Adrien JOURDAN](https://gitlab.com/adrien.jourdan1)

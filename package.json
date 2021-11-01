@@ -2,8 +2,8 @@
   "name": "simple-react-dialog",
   "version": "1.0.0",
   "description": "Made with create-react-library",
-  "author": "",
-  "license": "",
+  "author": "Adrien JOURDAN",
+  "license": "MIT",
   "repository": "",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
@@ -24,7 +24,13 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "prop-types": "^15.7.2",
+    "react-icons": "^4.3.1",
+    "react-transition-group": "^4.4.2",
+    "sass": "^1.43.3",
+    "scss": "^0.2.4",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
@@ -45,7 +51,13 @@
     "prettier": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "prop-types": "^15.7.2",
+    "react-icons": "^4.3.1",
+    "react-transition-group": "^4.4.2",
+    "sass": "^1.43.3",
+    "scss": "^0.2.4",
+    "styled-components": "^5.3.3"
   },
   "files": [
     "dist"
