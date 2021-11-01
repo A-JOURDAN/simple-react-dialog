@@ -1,8 +1,8 @@
+[![NPM](https://img.shields.io/npm/v/simple-react-dialog.svg)](https://www.npmjs.com/package/simple-react-dialog) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 # simple-react-dialog
 
-> Made with create-react-library
-
-[![NPM](https://img.shields.io/npm/v/simple-react-dialog.svg)](https://www.npmjs.com/package/simple-react-dialog) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+> A simple and reusable Dialog component for React [DEMO](https://github.com/A-JOURDAN/simple-react-dialog/settings/pages)
 
 ## Install
 
