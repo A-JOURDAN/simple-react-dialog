@@ -2,7 +2,8 @@
 
 # simple-react-dialog
 
-> A simple and reusable Dialog component for React ([DEMO](https://a-jourdan.github.io/simple-react-dialog/))
+> A simple and reusable Dialog component for React
+> Look at the [DEMO](https://a-jourdan.github.io/simple-react-dialog/)
 
 ## Install
 
