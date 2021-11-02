@@ -2,7 +2,7 @@
 
 # simple-react-dialog
 
-> A simple and reusable Dialog component for React [DEMO](https://a-jourdan.github.io/simple-react-dialog/)
+> A simple and reusable Dialog component for React ([DEMO](https://a-jourdan.github.io/simple-react-dialog/))
 
 ## Install
 
@@ -38,6 +38,27 @@ const Example = () => {
   );
 };
 ```
+
+## Required Props
+
+Prop you have to include :
+
+- value - specify the opening state of the Dialog (ex: true)
+- onClose - the function that will be used for close the Dialog (ex: setIsOpen(false))
+
+## Props
+
+Common props you may want to specify include :
+
+- contentRadius (default: '4px')
+- fullscreen (default: false)
+- hideOverlay (default: false)
+- origin (default: 'center')
+- overlayColor (default: '#000')
+- overlayOpacity (default: '0.4')
+- persistent (default: false)
+- transition (default: 'scale')
+- width (default: '500px')
 
 ## License
 
