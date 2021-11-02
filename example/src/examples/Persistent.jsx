@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { SimpleReactDialog } from 'simple-react-dialog';
 
 const Card = styled.div`
+  border-radius: 4px;
   width: 500px;
   background-color: white;
   display: flex;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { SimpleReactDialog } from 'simple-react-dialog';
 
 const Card = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   background-color: white;
   display: flex;
   flex-direction: column;

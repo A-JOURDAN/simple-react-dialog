@@ -6,7 +6,10 @@ import { CSSTransition } from 'react-transition-group';
 import { getTransition, growContent } from './utils/modal.utils';
 
 const Dialog = styled.div`
+  display: flex;
+  z-index: 200;
   position: fixed;
+  pointer-events: none;
   left: 0;
   top: 0;
   right: 0;
@@ -17,6 +20,7 @@ const Dialog = styled.div`
   opacity: 0;
   transition: all 200ms ease-in-out;
   pointer-events: none;
+  overflow-y: auto;
 
   &::before {
     background-color: ${(props) =>
@@ -50,6 +54,11 @@ const Dialog = styled.div`
   }
 
   .dialog-content {
+    width: 500px;
+    margin: ${(props) => (props.fullscreen ? '0' : '24px')};
+    overflow: auto;
+    pointer-events: auto;
+    height: ${(props) => (props.fullscreen ? '100%' : 'auto')};
     transform: ${(props) => getTransition(props.transition).transitionStart};
     transition: all 200ms ease-in-out;
     min-height: ${(props) => (props.fullscreen ? '100%' : 'none')};
@@ -57,7 +66,6 @@ const Dialog = styled.div`
     max-height: ${(props) => (props.fullscreen ? 'none' : '90%')};
     box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
       0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
-    overflow: hidden;
     border-radius: ${(props) => props.contentRadius};
     transform-origin: ${(props) => props.origin};
 
@@ -86,6 +94,15 @@ export const SimpleReactDialog = (props) => {
       };
     }
   }, [props]);
+
+  useEffect(() => {
+    const body = document.querySelector('body');
+    if (props.value) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'auto';
+    }
+  });
 
   return ReactDOM.createPortal(
     <CSSTransition
