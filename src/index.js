@@ -54,7 +54,7 @@ const Dialog = styled.div`
   }
 
   .dialog-content {
-    width: 500px;
+    width: ${(props) => props.width};
     margin: ${(props) => (props.fullscreen ? '0' : '24px')};
     overflow: auto;
     pointer-events: auto;
@@ -119,6 +119,7 @@ export const SimpleReactDialog = (props) => {
         contentRadius={props.contentRadius}
         fullscreen={props.fullscreen}
         origin={props.origin}
+        width={props.width}
       >
         <div className='dialog-content' onClick={(e) => e.stopPropagation()}>
           {props.children}
@@ -148,6 +149,7 @@ SimpleReactDialog.propTypes = {
     'fab',
   ]),
   origin: PropTypes.string,
+  width: PropTypes.string,
 };
 
 // Default Props
@@ -160,4 +162,5 @@ SimpleReactDialog.defaultProps = {
   fullscreen: false,
   transition: 'scale',
   origin: 'center',
+  width: '500px',
 };
